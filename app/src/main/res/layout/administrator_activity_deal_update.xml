@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is limited time offer"
+                android:id="@+id/dcreate_isLimitedTimeOfferCheckBox" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is limited availability"
+                android:id="@+id/dcreate_isLimitedAvailabilityCheckBox" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Deal ID: "
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_id"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Vendor ID: "
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_vid"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Bold Text: "
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_bold_text"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Fine Print Text: "
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_fine_print_text"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Img Ref: "
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_img_ref"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Valid From: "
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+
+                <EditText
+                    android:id="@+id/dcreate_validFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text=""
+                    android:ems="10"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Valid Until: "
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:text=""
+                    android:id="@+id/dcreate_validUntil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Highlight Text"
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_highlightText"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Original Price"
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+
+                <EditText
+                    android:id="@+id/dcreate_originalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:ems="10" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Current Price"
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_currentPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:ems="10" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Num Bought"
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+
+                <EditText
+                    android:id="@+id/dcreate_numBought"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text=""
+                    android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Num Thumbs Up"
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_numThumbsUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:text=""/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Num Thumbs Down"
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_numThumbsDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:text=""/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Tags (CSV)"
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/dcreate_tagList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dcreate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Deal"
+                android:onClick="updateDealAndRefreshTags"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

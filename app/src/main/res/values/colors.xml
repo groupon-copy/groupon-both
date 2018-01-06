@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="colorPrimary">#005eff</color>
+    <color name="colorPrimaryLight">#7fbdff</color>
+    <color name="colorPrimaryDark">#002678</color>-->
+    <color name="colorPrimary">#FFFF9100</color>
+    <color name="colorPrimaryLight">#ffc87f</color>
+    <color name="colorPrimaryDark">#c77100</color>
+    <color name="colorAccent">#00c2b5</color>
+    <color name="colorAccentLight">#7ff9f0</color>
+    <color name="colorAccentDark">#008f85</color>
+    <color name="gray">#B1BCBE</color>
+    <color name="lightGray">#e7e7e7</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="businessClosedText">@android:color/holo_red_dark</color>
+    <color name="businessOpenText">@android:color/holo_green_dark</color>
+</resources>

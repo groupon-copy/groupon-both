@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".One.DealActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dealActivity_toolbar"
+        android:layout_above="@+id/dealActivity_LLButton">
+
+        <LinearLayout
+            android:id="@+id/dealContentFragment_verticalLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- layouts here are for testing. it will be dynamically instantiated -->
+
+            <!--<include
+                android:id="@+id/dealActivity_dealHeader"
+                layout="@layout/one_deal_header"/>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

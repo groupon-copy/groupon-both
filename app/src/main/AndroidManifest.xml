@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marcus.grouponadministrator">
+
+    <!--
+ tells Google Play that the application can be installed on devices with API 19 and higher
+        If using Gradle build files, the minSdkVersion setting in the build file overrides the manifest settings
+    -->
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Be able to use ConnectivityManager and NetworkInfo from Utility class -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.maps" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Bottom 4: to auto-complete the email text field in the login form with the user's emails -->
+    <!--
+ <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ghoomo_icon_small"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DesignDemo">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- ONE -->
+
+        <activity
+            android:name=".One.MainFeedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".One.MainFeedSearchActivity"
+            android:label="@string/main_feed_searches"
+            android:parentActivityName=".One.MainFeedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+
+            <!-- will always show keyboard when activity starts | not push layout boundaries -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.marcus.grouponadministrator.One.MainFeedActivity" />
+        </activity>
+        <activity
+            android:name=".One.DealActivity"
+            android:parentActivityName=".One.MainFeedActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.marcus.grouponadministrator.One.MainFeedActivity" />
+        </activity>
+        <activity
+            android:name=".One.VendorPageActivity"
+            android:parentActivityName=".One.MainFeedActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.marcus.grouponadministrator.One.MainFeedActivity" />
+        </activity>
+
+        <!-- TWO -->
+
+        <activity
+            android:name=".Two.MainScreenActivity"
+            android:label="@string/main_screen"
+            android:parentActivityName=".One.MainFeedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+            <!-- solves keyboard pushing layout -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.marcus.grouponadministrator.One.MainFeedActivity" />
+        </activity>
+        <activity
+            android:name=".Two.TimeFrameEditActivity"
+            android:label="@string/time_frame_edit"
+            android:parentActivityName=".Two.MainScreenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.marcus.grouponadministrator.Two.MainScreenActivity" />
+        </activity>
+        <activity
+            android:name=".Two.YelpResultsActivity"
+            android:label="YELP RESULTS 2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Two.YelpSearchActivity"
+            android:label="@string/yelp_search"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".Two.ScheduledSearchReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="this_is_for_scheduled_search_receiver" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Two.YelpResultsNotification$NotificationReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="GHOOMO_NOTIFICATION_ACTION_2" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Two.ScheduledSearchReceiver$DismissReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="DISMISS_RECEIVER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ADMINISTRATOR ACTIVITIES -->
+        <activity android:name=".Administrator.DealCreateActivity" />
+        <activity android:name=".Administrator.DealUpdateActivity" />
+        <activity android:name=".Administrator.SendGrouponNotificationActivity"
+            android:parentActivityName=".One.MainFeedActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.marcus.grouponadministrator.One.MainFeedActivity" />
+        </activity>
+
+        <!-- USER ACTIVITIES -->
+        <activity
+            android:name=".User.LoginRegisterActivity"
+            android:label="@string/login_register_activity_title"
+            android:parentActivityName=".One.MainFeedActivity"
+            android:theme="@style/Theme.DesignDemo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.marcus.grouponadministrator.One.MainFeedActivity" />
+        </activity>
+        <activity
+            android:name=".User.PersonalizeAccountActivity"
+            android:label="@string/personalize_account_activity_title"
+            android:parentActivityName=".One.MainFeedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <!-- solves keyboard pushing layout -->
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.marcus.grouponadministrator.One.MainFeedActivity" />
+        </activity>
+
+        <!-- FIREBASE STUFF!!!! -->
+        <service android:name=".Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

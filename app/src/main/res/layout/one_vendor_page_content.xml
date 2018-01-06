@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".One.VendorPageActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/one_activity_vendor_page">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/vendorPageActivity_vendorNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sushi n More"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vendorPageActivity_ratingNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5.0"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"/>
+
+                    <RatingBar
+                        android:paddingLeft="2dp"
+                        android:id="@+id/vendorPageActivity_ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:clickable="false"
+                        android:isIndicator="true"/>
+
+                    <TextView
+                        android:id="@+id/vendorPageActivity_pricingTextView"
+                        android:paddingLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$$$"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/vendorPageActivity_phoneLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_call_black_24dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CALL"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vendorPageActivity_addressLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_directions_black_24dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DIRECTIONS"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vendorPageActivity_websiteLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_public_black_24dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WEBSITE"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/vendorPageActivity_descriptionTextView"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is the vendor details part of the page. Here it is not yet implemented in the application. But this will be used in the near future"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/vendorPageActivity_addressLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_place_black_24dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/vendorPageActivity_addressTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="2934 Warren Parkway"
+                        android:layout_weight="4"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vendorPageActivity_hoursLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_access_time_black_24dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="4">
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/vendorPageActivity_hourOpenOrClosedTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Open Today" />
+
+                        <LinearLayout
+                            android:id="@+id/vendorPageActivity_hoursLayoutBlank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- this is where the drop down hours are going to be -->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vendorPageActivity_menuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_chrome_reader_mode_black_24dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Menu"
+                        android:layout_weight="4"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vendorPageActivity_phoneLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_call_black_24dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/vendorPageActivity_phoneNumberTextView"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="(999) 999-9999"
+                        android:layout_weight="4"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vendorPageActivity_websiteLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_public_black_24dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/vendorPageActivity_websiteTextView"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="www.sushinmore.com"
+                        android:layout_weight="4"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"></LinearLayout>
+
+            <TextView
+                android:id="@+id/vendorPageActivity_showReviewsTextView"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Reviews"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="5dp"
+                android:layout_centerVertical="true"
+                android:onClick="showReviews"
+                android:background="@color/gray"
+                android:textColor="@android:color/white"/>
+
+            <LinearLayout
+                android:id="@+id/vendorPageActivity_ReviewsLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- reviews are here -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

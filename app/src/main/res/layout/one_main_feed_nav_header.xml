@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainFeedNavHeader_background"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@drawable/one_main_feed_nav_header_background"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="center|bottom">
+
+    <ImageView
+        android:id="@+id/mainFeedNavHeader_avatar_IV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/mainFeedNavHeader_CompanyNameOrUsername_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/company_name"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/mainFeedNavHeader_loginRegisterOrLogout_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mainFeedNavHeader_loginOrRegister"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:shadowColor="#444444"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:textAllCaps="true"/>
+
+</LinearLayout>

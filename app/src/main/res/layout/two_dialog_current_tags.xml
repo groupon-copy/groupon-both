@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialogCurrentTags_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAGS"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="30dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/dialogCurrentTags_tagsEditAdd"
+        android:layout_below="@+id/dialogCurrentTags_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/dialogCurrentTags_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/dialogCurrentTags_tagsAdd" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/dialogCurrentTags_tagsAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_above="@+id/dialogCurrentTags_optionsBottom"
+        android:layout_below="@+id/dialogCurrentTags_tagsEditAdd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/dialogCurrentTags_tagsLinearLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/dialogCurrentTags_optionsBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/dialogCurrentTags_backTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="BACK"
+            android:padding="20dp"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

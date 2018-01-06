@@ -1,0 +1,60 @@
+<resources>
+    <string name="company_name">Marcus Company</string>
+
+    <!-- <string name="google_app_id">921286857854</string> -->
+
+    <string name="app_name">ADMIN</string>
+    <string name="main_feed">MARCUS DEALS</string>
+    <string name="main_feed_searches">DEAL SEARCH</string>
+    <string name="deal">MARCUS DEAL</string>
+    <string name="vendor_page">MARCUS VENDOR</string>
+
+    <string name="main_screen">SCHEDULED SEARCH</string>
+    <string name="time_frame_edit">SCHEDULED SEARCH</string>
+    <string name="yelp_results">YELP RESULTS</string>
+    <string name="yelp_search">YELP SEARCH</string>
+
+    <!-- USER ACTIVITIES -->
+    <string name="personalize_account_activity_title">PERSONALIZE</string>
+    <string name="login_register_activity_title">Login or Register</string>
+
+    <string-array name="sort_by_type">
+        <item>nearest distance</item>
+        <item>highest rating</item>
+    </string-array>
+
+    <!-- A String resource to describe the "open drawer" action for accessibility -->
+    <!-- A String resource to describe the "close drawer" action for accessibility -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login and register fragments -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Log in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_email_not_registered">This email address is not registered</string>
+    <string name="error_email_registered_and_activated">This email address has already been registered and activated</string>
+    <string name="error_email_registered_and_not_activated">This email address has already been registered but needs to be activated</string>
+    <string name="error_username_already_taken">This username has already been taken</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings related to ResendVerifyEmailDialog -->
+    <string name="resendVerifyEmailDialog_title">Verification Email</string>
+    <string name="resendVerifyEmailDialog_body_text">The email you have just entered already exists in the database and a verification email has been sent during the time of registration.\n\n Click resend to resend the email. Click cancel to go back.</string>
+    <string name="resendVerifyEmailDialog_resend">RESEND</string>
+    <string name="resendVerifyEmailDialog_cancel">CANCEL</string>
+
+    <!-- Strings related to the Navigation Drawer Box -->
+    <string name="mainFeedNavHeader_loginOrRegister">LOG IN OR SIGN UP</string>
+    <string name="mainFeedNavHeader_logout">CLICK TO LOG OUT</string>
+
+</resources>

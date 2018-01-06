@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/dealMapPhoneWebsite_mapHolder"
+        android:background="@drawable/one_deal_content_border_bottom"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/dealMapPhoneWebsite_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/one_deal_content_border_bottom">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_directions_black_24dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/dealMapPhoneWebsite_addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4721 W Park Blvd\nPlano, TX 75023"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/dealMapPhoneWebsite_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/one_deal_content_border_bottom_right">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_call_black_24dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/dealMapPhoneWebsite_phoneText"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+19723210724"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dealMapPhoneWebsite_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/one_deal_content_border_bottom">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_public_black_24dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

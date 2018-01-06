@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:orientation="vertical"
+    android:id="@+id/mainFeedDealFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_topright_bottomright"
+        android:padding="3dp">
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/mainFeedDealFragment_imageView"
+            android:src="@drawable/no_image"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/gray">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="50% off ALL SUSHI"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:id="@+id/mainFeedDealFragment_boldText"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Sushi 100% Now this comes with strings attached to my body, however, I need to type more until this surpasses three lines"
+                android:textSize="15sp"
+                android:lines="3"
+                android:id="@+id/mainFeedDealFragment_fineText"/>
+            <TextView
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="ENDS in 2 seconds"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="15sp"
+                android:gravity="bottom"
+                android:id="@+id/mainFeedDealFragment_bottomText"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Two.TimeFrameEditAlarmFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:30 AM"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/timeframeEditAlarmActivity_timeStartTextView" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <Button
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:id="@+id/timeframeEditAlarmActivity_sunday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="S" />
+        <Button
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:id="@+id/timeframeEditAlarmActivity_monday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="M" />
+        <Button
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:id="@+id/timeframeEditAlarmActivity_tuesday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="T" />
+        <Button
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:id="@+id/timeframeEditAlarmActivity_wednesday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="W" />
+        <Button
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:id="@+id/timeframeEditAlarmActivity_thursday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="T" />
+        <Button
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:id="@+id/timeframeEditAlarmActivity_friday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="F" />
+        <Button
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:id="@+id/timeframeEditAlarmActivity_saturday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="S" />
+
+    </LinearLayout>
+
+</LinearLayout>

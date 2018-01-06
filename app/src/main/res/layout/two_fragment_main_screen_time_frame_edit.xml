@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    tools:context=".Two.MainScreenTimeFrameEditFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/mainScreenTimeframeEditFragment_onOffSwitch">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/mainScreenTimeframeEditFragment_moveTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="X"
+                android:textSize="25sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray"></LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/mainScreenTimeframeEditFragment_middleBodyLL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mainScreenTimeframeEditFragment_upperText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="30sp"
+                    android:text="11:30 AM"/>
+
+                <TextView
+                    android:id="@+id/mainScreenTimeframeEditFragment_lowerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:text="Timeframe Edit"/>
+
+                <TextView
+                    android:id="@+id/mainScreenTimeframeEditFragment_tagListTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:text="taco watermelon chicken"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Switch
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/mainScreenTimeframeEditFragment_onOffSwitch"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

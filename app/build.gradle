@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.example.marcus.grouponadministrator"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //trying to nest layouts folder, however I failed//
+    /*sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java','.apt_generated']
+            aidl.srcDirs = ['src/main/aidl','.apt_generated']
+            assets.srcDirs = ['src/main/assets']
+            res.srcDirs = [
+                    'src/main/res/layouts/layouts_category2',
+                    'src/main/res/layouts',
+                    'src/main/res'
+            ]
+        }
+    }*/
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    //compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'com.yelp.clientlib:yelp-android:1.0.0'
+
+    //compile 'com.google.android.gms:play-services:9.4.0' // the whole thing
+    compile 'com.google.android.gms:play-services-maps:9.4.0'
+    compile 'com.google.android.gms:play-services-location:9.4.0'
+
+    //helpful image loading
+    //compile 'com.github.bumptech.glide:glide:3.6.0' //another version, but picasso is better for me
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'jp.wasabeef:picasso-transformations:2.1.0'
+    // If you want to use the GPU Filters
+    //compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+
+    //firebase
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

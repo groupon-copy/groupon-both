@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingBottom="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_none"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:id="@+id/yelpBusinessFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/yelpBusinessFragment_image"
+                android:src="@drawable/ghoomo"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/gray"></LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sushi n More"
+                        android:singleLine="true"
+                        android:textSize="17sp"
+                        android:id="@+id/yelpBusinessFragment_nameTextView"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/yelpBusinessFragment_isOpenTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OPEN"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical" />
+                    
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/yelpBusinessFragment_ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:clickable="false"
+                        android:isIndicator="true"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/yelpBusinessFragment_numReviewsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="90"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text=" Reviews"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="tags are here"
+                    android:lines="1"
+                    android:textSize="15sp"
+                    android:id="@+id/yelpBusinessFragment_tagsTextView"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="4242 Hello World Drive"
+                        android:textSize="15sp"
+                        android:id="@+id/yelpBusinessFragment_locationTextView"/>
+
+                    <TextView
+                        android:id="@+id/yelpBusinessFragment_distanceTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.2 mi"
+                        android:textSize="13sp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

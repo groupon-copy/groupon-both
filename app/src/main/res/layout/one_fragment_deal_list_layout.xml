@@ -1,0 +1,115 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainFeedDealListLayoutFragment_swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/mainFeedDealListLayoutFragment_dealListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="2dp"
+                android:clipToPadding="false"
+                android:visibility="visible"
+                android:divider="#00000000"
+                android:nestedScrollingEnabled="true"> <!-- removes the dividers between items-->
+
+                <!-- these are where the deal fragments are placed -->
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/mainFeedDealListLayoutFragment_emptyDealText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NO DEALS TO BE DISPLAYED"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="please search for another deal in the search icon above. If all else fails please ask one of the administrators for assistance. Most likely they would not be avaliable. Apologies in advance"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!--<FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".DealListLayoutFragment">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/mainFeedDealListLayoutFragment_swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                 android:id="@+id/mainFeedDealListLayoutFragment_dealListView"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:paddingBottom="3dp"
+                 android:clipToPadding="false"
+                 android:visibility="visible"
+                 android:divider="#00000000">  removes the dividers between items
+                </ListView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <LinearLayout
+                android:id="@+id/mainFeedDealListLayoutFragment_emptyDealText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NO DEALS TO BE DISPLAYED"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="please search for another deal in the search icon above. If all else fails please ask one of the administrators for assistance. Most likely they would not be avaliable. Apologies in advance"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>-->
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

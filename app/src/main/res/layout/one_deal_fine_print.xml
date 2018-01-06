@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fine Print"
+        android:textSize="@dimen/deal_content_title_size"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/dealFinePrint_finePrintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promotional value expires (July 16, 2016) or (180 days after purchase). Amount paid never expires. \n\n extra text goes here. extra text goes here. extra text goes here. extra text goes here. extra text goes here. extra text goes here. extra text goes here."
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/dealFinePrint_seeRulesThatApply"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See the rulles that apply to all deals"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="Merchant is solely responsible to purchasers for the care and quality of the advertised goods and services."/>
+</LinearLayout>

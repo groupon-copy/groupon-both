@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.marcus.grouponadministrator.Administrator.SendGrouponNotificationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/sendGrouponNotification_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Deal ID: "
+                    android:textSize="@dimen/adminActivityDealCreate_textSize"/>
+                <EditText
+                    android:id="@+id/sendGrouponNotification_id"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sendGrouponNotification_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="broadcast"
+                android:onClick="sendBroadcast"/>
+
+            <TextView
+                android:id="@+id/sendGrouponNotification_response_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="response would be printed here"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

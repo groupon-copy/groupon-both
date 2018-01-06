@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resendVerifyEmailDialog_title"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="30dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resendVerifyEmailDialog_body_text"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialogResendVerifyEmail_cancel_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/dialogResendVerifyEmail_resend_TV"
+            android:text="@string/resendVerifyEmailDialog_cancel"
+            android:padding="20dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/dialogResendVerifyEmail_resend_TV"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/resendVerifyEmailDialog_resend"
+            android:padding="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

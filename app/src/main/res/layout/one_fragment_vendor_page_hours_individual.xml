@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".One.VendorPageHoursIndividualFragment"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/vendorPageHoursIndividual_dayTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sunday"/>
+
+    <LinearLayout
+        android:id="@+id/vendorPageHoursIndividual_dayLL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <!-- this is where the hours or "twenty four hour" "varies" and "closed" will be  placed -->
+
+    </LinearLayout>
+
+</LinearLayout>

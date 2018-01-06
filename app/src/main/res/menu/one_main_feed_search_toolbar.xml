@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mainFeedSearchToolbar_search"
+        android:title="SEARCH"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item
+        android:id="@+id/mainFeedSearchToolbar_mainScreen"
+        android:title="@string/main_screen"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mainFeedSearchToolbar_settings"
+        android:title="SETTINGS"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mainFeedSearchToolbar_help"
+        android:title="HELP"
+        app:showAsAction="never" />
+</menu>

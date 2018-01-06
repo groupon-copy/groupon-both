@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Two.Z_YelpResultsActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/yelpResultsActivity_toolbar"
+        layout="@layout/tool_bar_test" />
+
+    <LinearLayout
+        android:layout_below="@+id/yelpResultsActivity_toolbar"
+        android:id="@+id/yelpResultsActivity_bottomToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Current Tags"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/toolbar_button"
+            android:textColor="@android:color/white"
+            android:onClick="showDialogCurrentTags"/>
+
+        <Button
+            android:onClick="showFilterDialog"
+            android:background="@drawable/toolbar_button"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Filter"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/yelpResultsActivity_bottomToolbar"
+        android:orientation="horizontal"
+        android:id="@+id/yelpResultsActivity_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"></LinearLayout>
+
+    <FrameLayout
+        android:layout_below="@id/yelpResultsActivity_shadow"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/yelpResultsActivity_LL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- this is where the activeVendorListLayoutFragment will be placed -->
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/yelpResultsActivity_fab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        app:borderWidth="0dp"
+        android:onClick="fabClicked"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/colorPrimary"/>
+
+</RelativeLayout>

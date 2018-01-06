@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Two.YelpSearchActivity"
+    android:orientation="vertical">
+
+    <include android:id="@+id/yelpSearchActivity_toolbar"
+        layout="@layout/tool_bar_test" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:elevation="4dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Order By"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/toolbar_button"
+            android:textColor="@android:color/white"
+            android:onClick="showOrderByDialog"/>
+
+        <Button
+            android:onClick="showFilterDialog"
+            android:background="@drawable/toolbar_button"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Filter"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yelpSearchActivity_LL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- this is where the yelp businesses will be placed -->
+
+    </LinearLayout>
+
+</LinearLayout>
